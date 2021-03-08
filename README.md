@@ -4,7 +4,7 @@
 
 | Required? |  Name   | Description | Options | Defaults to |
 | :-------: | :-----: | :---------: | :-----: | :---------: |
-|    ✅     | API_KEY |             |         |             |
+|    🌐    | API_KEY |     `optional`        |         |             |
 
 ---
 
@@ -12,7 +12,7 @@
 
 | Required? |   Name   |     Description     |            Options             | Defaults to |
 | :-------: | :------: | :-----------------: | :----------------------------: | :---------: |
-|           | endpoint | The endpoint to use | [gasprice](#gasprice-Endpoint) | `gasprice`  |
+|     🆗      | endpoint | The endpoint to use | [gasprice](#gasprice-Endpoint) | `percentile[70]`  |
 
 ---
 
@@ -22,8 +22,8 @@
 
 | Required? |    Name    |               Description                |               Options                |    Defaults to     |
 | :-------: | :--------: | :--------------------------------------: | :----------------------------------: | :----------------: |
-|    🟡     |  `speed`   |            The desired speed             | `safeLow`,`average`,`fast`,`fastest` |     `average`      |
-|    🟡     | `endpoint` | The blockchain id to get gas prices from |                                      | `ethereum-mainnet` |
+|    🔵     |  `gwei`   |            gas costs by percentile distribution             | `percentile`,[1,2,3,4,5,10,15...100] |     `percentile[]`      |
+|    🔵     | `endpoint` | The blockchain id to get gas prices from |                                      | `ethereum-mainnet` |
 
 ### Output Format
 
